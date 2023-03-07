@@ -120,7 +120,7 @@ database: digest: sha256:79b3d2714960bc2214df35fcacd878e98c77a4bd15097ec90c0ed8c
 4) Deployment.yaml 에 별도의 Configuration 을 위한 쿠버네티스 객체인 Secret 스펙을 추가
   ( 패스워드가 노출되면 안되므로 PASSWORD 에 대해서만 Secret 을 이용하여 분리,"YWRtaW4="는 ‘admin’ 문자열의 BASE64 인코딩된 문자열)
   
-  
+  ![image](https://user-images.githubusercontent.com/122003216/223563453-8b64ef1d-d7df-4e1a-8c1c-8592a62e3941.png)
 
 
 
