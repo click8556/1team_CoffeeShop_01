@@ -91,6 +91,16 @@ ENTRYPOINT ["java","-Xmx400M","-Djava.security.egd=file:/dev/./urandom","-jar","
 
 ![image](https://user-images.githubusercontent.com/122003216/223557878-1731b0d3-f4b2-4be3-ab18-f328de850dc3.png)
 
+2) 빌드하여 dashboard:database 라는 이미지명으로 레지스트리에 등록 
+
+cd dashboard
+mvn package -B 
+
+docker build -t wisemaninatown/dashboard:database .
+
+
+
+
 
 ## 11. Self-healing (liveness probe)
 ## 12. Apply Service Mesh
