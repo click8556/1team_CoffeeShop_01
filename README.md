@@ -113,17 +113,11 @@ a9711b2e31f2: Layer already exists
 database: digest: sha256:79b3d2714960bc2214df35fcacd878e98c77a4bd15097ec90c0ed8c1d9921a4b size: 1370
 
 
-3) Database 환경정보를 설정하기 위해 deployment.yaml 를 변경한다. 
-
-    3-1 ) 이미지 변경
-
-      containers:
-        - name: dashboard
-          #image: wisemaninatown/dashboard:20230307
-          image: wisemaninatown/dashboard:database
-          
-![image](https://user-images.githubusercontent.com/122003216/223559235-3c6ed58d-b7da-49fd-b3e1-462fe223e5ed.png)
-
+3) Database 환경정보를 설정하기 위해 deployment.yaml 를 변경한다.
+   3-1 ) 이미지 변경
+   ![image](https://user-images.githubusercontent.com/122003216/223559235-3c6ed58d-b7da-49fd-b3e1-462fe223e5ed.png)
+   3-2) ports 다음에 env 추가
+   ![image](https://user-images.githubusercontent.com/122003216/223559623-529ae2ce-a387-45f0-aab5-fefc141c0618.png)
 
 
 ## 11. Self-healing (liveness probe)
