@@ -114,9 +114,7 @@ database: digest: sha256:79b3d2714960bc2214df35fcacd878e98c77a4bd15097ec90c0ed8c
 
 
 3) Database 환경정보를 설정하기 위해 deployment.yaml 를 변경한다.
-   3-1 ) 이미지 변경
-   ![image](https://user-images.githubusercontent.com/122003216/223559235-3c6ed58d-b7da-49fd-b3e1-462fe223e5ed.png)
-   3-2) ports 다음에 env 추가
+  : 이미지 변경 ,  ports 다음에 env 추가
    ![image](https://user-images.githubusercontent.com/122003216/223559623-529ae2ce-a387-45f0-aab5-fefc141c0618.png)
 
 
