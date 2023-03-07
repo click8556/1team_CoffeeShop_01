@@ -85,6 +85,9 @@ python policy-handler.py
 
 ## DDD 의 적용
 
+## 6. API gateway 적용
+![image](https://user-images.githubusercontent.com/122003216/223322936-4f5b8257-852d-45b7-a55b-3e8d0a78377b.png)
+
 ## 폴리글랏 퍼시스턴스
 
 ## 폴리글랏 프로그래밍
