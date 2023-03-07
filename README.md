@@ -53,7 +53,8 @@
 # 분석/설계
 
 ## Event Storming 결과
-* MSAEz 로 모델링한 이벤트스토밍 결과:  ** 이미지 추가해야함
+* MSAEz 로 모델링한 이벤트스토밍 결과: 
+*** 이미지 추가해야함
 
 
 ### 완성된 1차 모형
@@ -81,18 +82,22 @@ mvn spring-boot:run
 
 cd customer
 python policy-handler.py 
+
 ```
-
-## DDD 의 적용
-
-## 6. API gateway 적용
-![image](https://user-images.githubusercontent.com/122003216/223322936-4f5b8257-852d-45b7-a55b-3e8d0a78377b.png)
-
-## 폴리글랏 퍼시스턴스
-
-## 폴리글랏 프로그래밍
-
-## 동기식 호출 과 Fallback 처리
+## 1. Saga
+## 2. CQRS
+## 3. Compensation & Correlation 
+## 4. Request / Response  (제외)
+## 5. Circuit Breaker   (제외)
+## 6. API Gateway 적용
+      ![image](https://user-images.githubusercontent.com/122003216/223322936-4f5b8257-852d-45b7-a55b-3e8d0a78377b.png)
+## 7. Deploy (O) / Pipeline 
+## 8. Autoscale (HPA)
+## 9. Zero-downtime deploy (Readiness probe)
+## 10. Persistence Volume/ConfigMap/Secret
+## 11. Self-healing (liveness probe)
+## 12. Apply Service Mesh
+## 13. Loggregation / Monitoring
 
 
 #주문처리
