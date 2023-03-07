@@ -90,11 +90,22 @@ python policy-handler.py
 ## 4. Request / Response  (제외)
 ## 5. Circuit Breaker   (제외)
 ## 6. API Gateway 적용
-      ![image](https://user-images.githubusercontent.com/122003216/223322936-4f5b8257-852d-45b7-a55b-3e8d0a78377b.png)
 ## 7. Deploy (O) / Pipeline 
 ## 8. Autoscale (HPA)
 ## 9. Zero-downtime deploy (Readiness probe)
 ## 10. Persistence Volume/ConfigMap/Secret
+
+1) Dockerfile  수정
+ 
+     /workspace/team1CapstoneCafe/dashboard/Dockerfile  
+    수정
+
+ENTRYPOINT ["java","-Xmx400M","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar","--spring.profiles.active=docker"]
+끝에   ,"--spring.config.location=file:/application.yml" 추가 
+
+
+
+
 ## 11. Self-healing (liveness probe)
 ## 12. Apply Service Mesh
 ## 13. Loggregation / Monitoring
