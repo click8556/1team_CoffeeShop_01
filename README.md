@@ -98,6 +98,8 @@ mvn package -B
 
 docker build -t wisemaninatown/dashboard:database .
 
+![image](https://user-images.githubusercontent.com/122003216/223558455-0927478a-3cb4-4a9b-a32a-ada545b124c2.png)
+
 
 
 
