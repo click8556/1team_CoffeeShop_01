@@ -144,11 +144,15 @@ database: digest: sha256:79b3d2714960bc2214df35fcacd878e98c77a4bd15097ec90c0ed8c
    
  10) dashboard 마이크로 서비스를 쿠버네티스 DNS 체계내에서 접근가능하게 하기 위해 ClusterIP 로 서비스를 생성.
      dashboard 서비스에서 mysql 접근을 위하여 "mysql"이라는 도메인명으로 접근하고 있으므로, 같은 이름으로 서비스를 만들어줌.
-     (  mysql-deployment.yaml 에 내용 추가,  적용 )
+     ( mysql-deployment.yaml 에 내용 추가,  적용 )
+     
      ![image](https://user-images.githubusercontent.com/122003216/223591445-72891fce-1e3f-40c6-ad8d-a580a3d4ea97.png)
+     
      ![image](https://user-images.githubusercontent.com/122003216/223591521-dcf90225-de52-4789-ba27-ac6ae3fc875c.png)
    
-    
+ 11) dashboard 마이크로 서비스만을 새로 재기동. ( dashboard po 를 삭제하면 deployment에 의해서 알아서 재시작 )
+     ![image](https://user-images.githubusercontent.com/122003216/223592406-156a4341-c1e5-4b23-99c6-e16952003b1d.png)
+
 
 ## 11. Self-healing (liveness probe)
 ## 12. Apply Service Mesh
