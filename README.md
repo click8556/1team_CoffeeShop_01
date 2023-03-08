@@ -123,30 +123,16 @@ database: digest: sha256:79b3d2714960bc2214df35fcacd878e98c77a4bd15097ec90c0ed8c
 
 5) 생성된 secret 확인
    kubectl get secrets
+![image](https://user-images.githubusercontent.com/122003216/223588646-6758871c-d2f9-4da3-9b1a-2d580c3c89b9.png)
 
-NAME                  TYPE                                  DATA   AGE
-default-token-l7t7b   kubernetes.io/service-account-token   3      4h24m
-mysql-pass            Opaque                                1      1m
-
-
-6) deployment.yaml 의  env: 수정
-             env:
-            - name: superuser.userId
-              value: userId
-            - name: _DATASOURCE_ADDRESS
-              value: mysql
-            - name: _DATASOURCE_TABLESPACE
-              value: orderdb
-            - name: _DATASOURCE_USERNAME
-              value: root
-            - name: _DATASOURCE_PASSWORD
-              valueFrom:
-                secretKeyRef:
-                  name: mysql-pass
-                  key: password
+6) 이 Secret을 Order Deployment 에 반영하기 위해  deployment.yaml 의  env: 수정
+  ![image](https://user-images.githubusercontent.com/122003216/223588837-38e8978e-d386-4a10-9bd7-0ea3d2aec3f4.png)
                   
- 7) Database 서비스의 생성 (MySQL) :  mysql-deployment.yaml  ,추가
+7) Database 서비스의 생성 (MySQL) :  mysql-deployment.yaml  ,추가
+  ![image](https://user-images.githubusercontent.com/122003216/223589611-91d045de-fdf6-4140-a826-a460dd9834bf.png)
 
+  ![image](https://user-images.githubusercontent.com/122003216/223589801-8aabe9bd-9d06-45c9-9834-ae48f6db3ae8.png)
+  
  8) Pod 실행을 확인
 
  9) 
