@@ -115,7 +115,7 @@ database: digest: sha256:79b3d2714960bc2214df35fcacd878e98c77a4bd15097ec90c0ed8c
 
 3) Database 환경정보를 설정하기 위해 deployment.yaml 를 변경한다.
   : 이미지 변경 ,  ports 다음에 env 추가
-   ![image](https://user-images.githubusercontent.com/122003216/223559623-529ae2ce-a387-45f0-aab5-fefc141c0618.png)
+ ![image](https://user-images.githubusercontent.com/122003216/223598340-9a96eb26-bd92-46b5-94c4-1ab02c9f59e4.png)
    
 4) Deployment.yaml 에 별도의 Configuration 을 위한 쿠버네티스 객체인 Secret 스펙을 추가  
 
