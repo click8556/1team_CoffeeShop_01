@@ -136,7 +136,7 @@ database: digest: sha256:79b3d2714960bc2214df35fcacd878e98c77a4bd15097ec90c0ed8c
  8) Pod 실행을 확인
 
  9) 
-    
+    d
 
 ## 11. Self-healing (liveness probe)
 ## 12. Apply Service Mesh
