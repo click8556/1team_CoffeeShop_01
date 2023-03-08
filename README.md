@@ -117,12 +117,40 @@ database: digest: sha256:79b3d2714960bc2214df35fcacd878e98c77a4bd15097ec90c0ed8c
   : 이미지 변경 ,  ports 다음에 env 추가
    ![image](https://user-images.githubusercontent.com/122003216/223559623-529ae2ce-a387-45f0-aab5-fefc141c0618.png)
    
-4) Deployment.yaml 에 별도의 Configuration 을 위한 쿠버네티스 객체인 Secret 스펙을 추가
-  ( 패스워드가 노출되면 안되므로 PASSWORD 에 대해서만 Secret 을 이용하여 분리,"YWRtaW4="는 ‘admin’ 문자열의 BASE64 인코딩된 문자열)
-  
-  ![image](https://user-images.githubusercontent.com/122003216/223563453-8b64ef1d-d7df-4e1a-8c1c-8592a62e3941.png)
+4) Deployment.yaml 에 별도의 Configuration 을 위한 쿠버네티스 객체인 Secret 스펙을 추가  
+
+![image](https://user-images.githubusercontent.com/122003216/223588108-c66d430a-be82-4037-805e-509ab12cac65.png)
+
+5) 생성된 secret 확인
+   kubectl get secrets
+
+NAME                  TYPE                                  DATA   AGE
+default-token-l7t7b   kubernetes.io/service-account-token   3      4h24m
+mysql-pass            Opaque                                1      1m
 
 
+6) deployment.yaml 의  env: 수정
+             env:
+            - name: superuser.userId
+              value: userId
+            - name: _DATASOURCE_ADDRESS
+              value: mysql
+            - name: _DATASOURCE_TABLESPACE
+              value: orderdb
+            - name: _DATASOURCE_USERNAME
+              value: root
+            - name: _DATASOURCE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-pass
+                  key: password
+                  
+ 7) Database 서비스의 생성 (MySQL) :  mysql-deployment.yaml  ,추가
+
+ 8) Pod 실행을 확인
+
+ 9) 
+    
 
 ## 11. Self-healing (liveness probe)
 ## 12. Apply Service Mesh
