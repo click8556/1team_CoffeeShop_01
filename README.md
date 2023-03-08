@@ -139,6 +139,7 @@ database: digest: sha256:79b3d2714960bc2214df35fcacd878e98c77a4bd15097ec90c0ed8c
  9) 새 터미널에서 Pod 에 접속하여 dashboarddb 데이터베이스 공간을 만들어주고 데이터베이스가 잘 동작하는지 확인
    ![image](https://user-images.githubusercontent.com/122003216/223590470-bd6e8272-7495-4cca-87f2-549e2b364852.png)
    ![image](https://user-images.githubusercontent.com/122003216/223590644-3ea74f5d-a1ad-4f5e-b1e1-776993952729.png)
+   ![image](https://user-images.githubusercontent.com/122003216/223590717-e5479c7b-fffb-4660-b010-0800971ea08f.png)
    
     
 
