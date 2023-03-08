@@ -125,6 +125,7 @@ database: digest: sha256:79b3d2714960bc2214df35fcacd878e98c77a4bd15097ec90c0ed8c
    kubectl get secrets
 ![image](https://user-images.githubusercontent.com/122003216/223588646-6758871c-d2f9-4da3-9b1a-2d580c3c89b9.png)
 
+
 6) 이 Secret을 Order Deployment 에 반영하기 위해  deployment.yaml 의  env: 수정
   ![image](https://user-images.githubusercontent.com/122003216/223588837-38e8978e-d386-4a10-9bd7-0ea3d2aec3f4.png)
                   
